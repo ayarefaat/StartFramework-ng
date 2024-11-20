@@ -44,6 +44,19 @@ section.portfolio{
         width: 600px;
       }
 }
-.prevent-event{
-    pointer-events: none;
+@media  (max-width:768px) {
+    .overlay{
+
+        img{
+            width: 550px;
+        }
+    }
+}
+@media  (max-width:578px) {
+    .overlay{
+
+        img{
+            width: 500px;
+        }
+    }
 }
