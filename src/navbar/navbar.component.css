@@ -5,6 +5,14 @@ nav{
     -moz-transition: padding ease 0.5s;
     -ms-transition: padding ease 0.5s;
     -o-transition: padding ease 0.5s;
+    ul{
+        li{
+            width: fit-content;
+            a{
+                padding: 10px;
+            }
+        }
+    }
 }
 .bg-main-color{
     background-color: var(--main-color);
