@@ -1,0 +1,10 @@
+section.not-found{
+    margin-top: 85px;
+    height: 50vh;
+    h2{
+        color: var(--sec-color);
+        span{
+            color: crimson;
+        }
+    }
+}

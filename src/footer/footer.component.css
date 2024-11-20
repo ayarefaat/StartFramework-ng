@@ -1,0 +1,18 @@
+footer{
+    background-color: var(--sec-color);
+    .row{
+        .item{
+            .social{
+                span{
+                    width: 35px;
+                    height: 35px;
+                    line-height: 33px;
+                    border: 1px solid #fff;
+                }
+            }
+        }
+    }
+}
+div.copyright{
+    background-color: #1a252f;
+}

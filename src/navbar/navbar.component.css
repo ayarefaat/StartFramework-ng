@@ -1,0 +1,11 @@
+nav{
+    background-color: var(--sec-color);
+    transition: padding ease 0.5s;
+    -webkit-transition: padding ease 0.5s;
+    -moz-transition: padding ease 0.5s;
+    -ms-transition: padding ease 0.5s;
+    -o-transition: padding ease 0.5s;
+}
+.bg-main-color{
+    background-color: var(--main-color);
+}

@@ -1,0 +1,40 @@
+<section class="portfolio text-center py-5">
+    <div class="container">
+        <div class="header mt-4">
+            <h2 class="text-uppercase fs-1 fw-bolder ">portfolio component</h2>
+            <div class="divider d-flex justify-content-center align-items-center ">
+                <div class="line me-3"></div>
+                <span><i class="fa-solid fa-star"></i></span>
+                <div class="line ms-3"></div>
+            </div>
+        </div>
+        <div class="row ">
+            @for(img of imgs;track $index){
+                <div class="item col-lg-4 col-md-6 g-5 ">
+                    <div class="img position-relative"  (click)="display($event,imgData)">
+                        <img [src]="img.imgSrc" #imgData class="w-100  rounded-3" [alt]="img.imgAlt">
+                        <div class="layer rounded-3 position-absolute top-0 start-0 d-flex justify-content-center align-items-center">
+                            <span class="text-white"><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+                </div>
+            }
+            @for(img of imgs;track $index){
+                <div class="item g-5 col-lg-4 col-md-6">
+                    <div class="img position-relative" (click)="display($event,imgData)">
+                        <img [src]="img.imgSrc" #imgData  class="w-100  rounded-3" [alt]="img.imgAlt" >
+                        <div  [attr.data-target]="img.imgSrc" class="layer rounded-3 position-absolute top-0 start-0 d-flex justify-content-center align-items-center">
+                            <span class="text-white"><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+@if(IsVisible){
+
+    <div class="overlay position-fixed top-0 start-0 vh-100 w-100 d-flex justify-content-center align-items-center"  (click)="dismiss($event)">
+        <img [src]="image" class=" pt-4" alt="">
+    </div>
+}

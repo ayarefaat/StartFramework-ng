@@ -1,0 +1,19 @@
+section{
+    margin-top: 85px;
+    height: 85vh;
+    background-color: var(--main-color);
+    .image{
+        img{
+            width: 250px;
+        }
+    }
+    .content{
+      .divider{
+        .line{
+            width: 80px;
+            height: 4px;
+            background-color: #fff;
+        }
+      }
+    }
+}

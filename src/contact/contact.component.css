@@ -1,0 +1,21 @@
+section.contact{
+    margin-top: 85px;
+    height: 85vh;
+    .divider{
+       div.line{
+        background-color: var(--sec-color);
+       }
+    }
+    form{
+        input{
+            &:focus{
+                box-shadow: none;
+                background-color: transparent;
+                
+            }
+        }
+        button{
+            background-color: var(--main-color);
+        }
+    }
+}

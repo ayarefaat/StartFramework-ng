@@ -1,0 +1,15 @@
+section.about{
+    background-color: var(--main-color);
+    margin-top: 89px;
+    height: 85vh;
+    .content{
+       
+          .row{
+            .item{
+                p{
+                    max-width: 550px;
+                }
+            }
+          }
+    }
+}
